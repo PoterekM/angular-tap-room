@@ -7,16 +7,19 @@
     <h2>Beers on Tap</h2>
     <ul *ngFor="let currentKeg of kegs">
       <h3>{{currentKeg.name}}</h3>
-      <ul>
+      <button (click)="editKeg(currentKeg)">Edit</button>
         <li>{{currentKeg.brand}}</li>
         <li [class]="priceColor(currentKeg)">${{currentKeg.price}}.00</li>
         <li>{{currentKeg.alcoholContent}}% ABV</li>
         <li>{{currentKeg.remainingPints}} Pints</li>
-      </ul>
       <button (click)="sellPint(currentKeg)">Sell A Pint</button>
     </ul>
   </div>
 
-
+  <div *ngIf="selectedKeg">
+    <h3>Edit Keg Info</h3>
+    <input [(ngModel)]="name" type="text">
+    <button (click)="editComplete()">Edit Keg</button>
+  </div>
 
 </div>

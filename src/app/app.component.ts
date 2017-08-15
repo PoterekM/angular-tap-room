@@ -31,6 +31,15 @@ export class AppComponent {
       alert("Only " + currentKeg.remainingPints + " Pints left of " + currentKeg.brand);
     }
   }
+
+  editKeg(currentKeg) {
+    this.selectedKeg = currentKeg;
+  }
+
+  editComplete() {
+    this.selectedKeg = null;
+  }
+
 }
 
 export class Keg {
