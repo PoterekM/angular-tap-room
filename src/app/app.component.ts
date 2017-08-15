@@ -25,12 +25,15 @@ export class AppComponent {
     }
   }
 
-  sellPint(keg) {
-    keg.remainingPints -= 1;
+  sellPint(currentKeg) {
+    currentKeg.remainingPints -= 1;
+    if (currentKeg.remainingPints <= 10) {
+      alert("Only " + currentKeg.remainingPints + " Pints left of " + currentKeg.brand);
+    }
   }
 }
 
 export class Keg {
-  remainingPints: number = 124;
+  remainingPints: number = 13;
   constructor(public name: string, public brand: string, public price: number, public alcoholContent: number) {  };
 };
