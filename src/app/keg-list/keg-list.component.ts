@@ -32,5 +32,4 @@ export class KegListComponent implements OnInit {
   sellPintButtonClicked(currentKeg) {
     this.sellPintButtonClickedSender.emit(currentKeg);
   }
-
 }
