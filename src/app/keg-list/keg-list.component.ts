@@ -9,10 +9,19 @@ import { Keg } from './../keg.model';
 
 export class KegListComponent implements OnInit {
   @Input() childKegList: Keg[];
-
-  constructor() { }
+  // @Output()
 
   ngOnInit() {
+  }
+
+  priceColor(currentKeg) {
+    if (currentKeg.price < 5) {
+      return "bg-info";
+    } else if (currentKeg.price < 10) {
+      return "bg-warning";
+    } else {
+      return "bg-success";
+    }
   }
 
 }

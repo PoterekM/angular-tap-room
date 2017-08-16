@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Keg } from './keg.model';
 
 @Component({
@@ -8,23 +8,13 @@ import { Keg } from './keg.model';
 })
 export class AppComponent {
   title = 'M&M\'s Taproom';
-  kegs: Keg[] = [
+  masterKegList: Keg[] = [
     new Keg('IPA', 'Laurelwood', 4, 7),
     new Keg('Stout', 'Founders', 5, 8),
     new Keg('Rye', 'P.Diddy', 10, 4)
   ];
 
   selectedKeg = null;
-
-  priceColor(currentKeg) {
-    if (currentKeg.price < 5) {
-      return "bg-info";
-    } else if (currentKeg.price < 10) {
-      return "bg-warning";
-    } else {
-      return "bg-success";
-    }
-  }
 
   sellPint(currentKeg) {
     currentKeg.remainingPints -= 1;

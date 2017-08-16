@@ -1,3 +1,9 @@
-<p>
-  keg-list works!
-</p>
+<ul *ngFor="let currentKeg of childKegList">
+  <h3>{{currentKeg.name}}</h3>
+  <button (click)="editKeg(currentKeg)">Edit</button>
+    <li>{{currentKeg.brand}}</li>
+    <li [class]="priceColor(currentKeg)">${{currentKeg.price}}.00</li>
+    <li>{{currentKeg.alcoholContent}}% ABV</li>
+    <li>{{currentKeg.remainingPints}} Pints</li>
+  <button (click)="sellPint(currentKeg)">Sell A Pint</button>
+</ul>
