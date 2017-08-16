@@ -12,6 +12,12 @@ export class KegListComponent implements OnInit {
   @Output() editButtonClickedSender = new EventEmitter();
   @Output() sellPintButtonClickedSender = new EventEmitter();
 
+  filterByPrice: string = "allKegs";
+
+  onChange(optionFromMenu) {
+    this.filterByPrice = optionFromMenu;
+  }
+
   ngOnInit() {
   }
 

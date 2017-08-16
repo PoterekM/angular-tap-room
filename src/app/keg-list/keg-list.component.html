@@ -1,4 +1,11 @@
-<ul *ngFor="let currentKeg of childKegList | price">
+<select (change)="onChange($event.target.value)">
+  <option value="allKegs" selected="selected">Filter By</option>
+  <option value="cheap" >Cheap</option>
+  <option value="moderate">Moderate</option>
+  <option value="expensive" >Expensive</option>
+</select>
+
+<ul *ngFor="let currentKeg of childKegList | price:filterByPrice">
   <h3>{{currentKeg.name}}</h3>
   <button (click)="editButtonClicked(currentKeg)">Edit</button>
     <li>{{currentKeg.brand}}</li>

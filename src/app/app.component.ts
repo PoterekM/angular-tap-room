@@ -9,7 +9,8 @@ import { Keg } from './keg.model';
 export class AppComponent {
   title = 'M&M\'s Taproom';
   masterKegList: Keg[] = [
-    new Keg('IPA', 'Laurelwood', 4, 7),
+    new Keg('IPA', 'Laurelwood', 3, 7),
+    new Keg('Pale Ale', 'Moon Crest', 4, 9),
     new Keg('Stout', 'Founders', 5, 8),
     new Keg('Rye', 'P.Diddy', 10, 4)
   ];
