@@ -9,7 +9,7 @@ import { KegListComponent } from './keg-list/keg-list.component';
 @NgModule({
   declarations: [
     AppComponent,
-    KegListComponent
+    KegListComponent,
   ],
   imports: [
     BrowserModule,

@@ -5,7 +5,7 @@
 
   <div class="menu">
     <h2>Beers on Tap</h2>
-    <keg-list [childKegList]="masterKegList" (editButtonClickedSender)="editKeg($event)"></keg-list>
+    <keg-list [childKegList]="masterKegList" (editButtonClickedSender)="editKeg($event)" (sellPintButtonClickedSender)="sellPint($event)"></keg-list>
   </div>
 
   <div *ngIf="selectedKeg">

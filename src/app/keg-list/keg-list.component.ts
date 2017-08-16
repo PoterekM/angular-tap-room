@@ -10,6 +10,7 @@ import { Keg } from './../keg.model';
 export class KegListComponent implements OnInit {
   @Input() childKegList: Keg[];
   @Output() editButtonClickedSender = new EventEmitter();
+  @Output() sellPintButtonClickedSender = new EventEmitter();
 
   ngOnInit() {
   }
@@ -26,6 +27,10 @@ export class KegListComponent implements OnInit {
 
   editButtonClicked(currentKeg) {
     this.editButtonClickedSender.emit(currentKeg);
+  }
+
+  sellPintButtonClicked(currentKeg) {
+    this.sellPintButtonClickedSender.emit(currentKeg);
   }
 
 }
