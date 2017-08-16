@@ -9,7 +9,7 @@ import { Keg } from './../keg.model';
 
 export class KegListComponent implements OnInit {
   @Input() childKegList: Keg[];
-  // @Output()
+  @Output() editButtonClickedSender = new EventEmitter();
 
   ngOnInit() {
   }
@@ -22,6 +22,10 @@ export class KegListComponent implements OnInit {
     } else {
       return "bg-success";
     }
+  }
+
+  editButtonClicked(currentKeg) {
+    this.editButtonClickedSender.emit(currentKeg);
   }
 
 }
