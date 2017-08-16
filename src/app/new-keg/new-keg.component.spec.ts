@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SellPintComponent } from './sell-pint.component';
+import { NewKegComponent } from './new-keg.component';
 
-describe('SellPintComponent', () => {
-  let component: SellPintComponent;
-  let fixture: ComponentFixture<SellPintComponent>;
+describe('NewKegComponent', () => {
+  let component: NewKegComponent;
+  let fixture: ComponentFixture<NewKegComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SellPintComponent ]
+      declarations: [ NewKegComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SellPintComponent);
+    fixture = TestBed.createComponent(NewKegComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

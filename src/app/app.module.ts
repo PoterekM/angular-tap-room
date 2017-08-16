@@ -5,13 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { KegListComponent } from './keg-list/keg-list.component';
-import { SellPintComponent } from './sell-pint/sell-pint.component';
+import { NewKegComponent } from './new-keg/new-keg.component';
+import { EditKegComponent } from './edit-keg/edit-keg.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     KegListComponent,
-    SellPintComponent,
+    NewKegComponent,
+    EditKegComponent,
   ],
   imports: [
     BrowserModule,

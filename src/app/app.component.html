@@ -8,13 +8,8 @@
     <keg-list [childKegList]="masterKegList" (editButtonClickedSender)="editKeg($event)" (sellPintButtonClickedSender)="sellPint($event)"></keg-list>
   </div>
 
-  <div *ngIf="selectedKeg">
-    <h3>{{selectedKeg.name}}: Edit Info</h3>
-    <label>Edit Keg Name</label>
-    <input [(ngModel)]="selectedKeg.name" type="text">
-    <label>Edit Keg Brand</label>
-    <input [(ngModel)]="selectedKeg.brand" type="text">
-    <button (click)="editComplete()">Edit Keg</button>
-  </div>
+  <new-keg></new-keg>
+
+  <edit-keg [childSelectedKeg]="selectedKeg" (editCompleteButtonSender)="editComplete()"></edit-keg>
 
 </div>
