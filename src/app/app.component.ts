@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Keg } from './keg.model';
 
 @Component({
   selector: 'app-root',
@@ -41,8 +42,3 @@ export class AppComponent {
   }
 
 }
-
-export class Keg {
-  remainingPints: number = 13;
-  constructor(public name: string, public brand: string, public price: number, public alcoholContent: number) {  };
-};

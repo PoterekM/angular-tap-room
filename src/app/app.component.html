@@ -5,6 +5,8 @@
 
   <div class="menu">
     <h2>Beers on Tap</h2>
+    <keg-list [childKegList]="masterKegList"></keg-list>
+
     <ul *ngFor="let currentKeg of kegs">
       <h3>{{currentKeg.name}}</h3>
       <button (click)="editKeg(currentKeg)">Edit</button>
