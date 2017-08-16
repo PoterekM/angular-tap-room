@@ -1,4 +1,4 @@
-<ul *ngFor="let currentKeg of childKegList">
+<ul *ngFor="let currentKeg of childKegList | price">
   <h3>{{currentKeg.name}}</h3>
   <button (click)="editButtonClicked(currentKeg)">Edit</button>
     <li>{{currentKeg.brand}}</li>
