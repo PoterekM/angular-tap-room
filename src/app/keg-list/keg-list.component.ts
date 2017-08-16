@@ -32,4 +32,9 @@ export class KegListComponent implements OnInit {
   sellPintButtonClicked(currentKeg) {
     this.sellPintButtonClickedSender.emit(currentKeg);
   }
+
+  // sendUpRandomInputs(input1, input2) {
+  //   var obj = new OBJ(input1, input2);
+  //   var array = [input1, input2];
+  //   this.sendUpRandomInputs.emit(obj or array);
 }

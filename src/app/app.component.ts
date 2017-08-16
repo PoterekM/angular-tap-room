@@ -31,4 +31,10 @@ export class AppComponent {
     this.selectedKeg = null;
   }
 
+
+
+  newKeg(newKegFromChild: Keg) {
+    this.masterKegList.push(newKegFromChild);
+  }
+
 }
