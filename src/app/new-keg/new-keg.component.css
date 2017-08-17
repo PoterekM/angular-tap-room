@@ -5,3 +5,39 @@ button {
 body {
   background-color: #550000;
 }
+
+.well {
+  color: #FFAAAA;
+  background-color: rgb(128, 21, 21);
+  font-family: 'Abel', sans-serif;
+  display: flex
+}
+
+label {
+  font-size: 16px;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: center;*/
+  /*text-align: center;*/
+  /*color: #FFAAAA;
+  background-color: rgb(128, 21, 21);
+  font-family: 'Abel', sans-serif;*/
+
+}
+
+.flex-item {
+  border: 2px solid white;
+  padding: 20px;
+  margin: 20px;
+  min-width: 400px;
+  max-width: 400px;
+  word-break: normal;
+  color: #FFAAAA;
+  background-color: rgb(128, 21, 21);
+  font-family: 'Abel', sans-serif;
+
+}
