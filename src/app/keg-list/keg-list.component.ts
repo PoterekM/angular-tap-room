@@ -11,6 +11,7 @@ export class KegListComponent implements OnInit {
   @Input() childKegList: Keg[];
   @Output() editButtonClickedSender = new EventEmitter();
   @Output() sellPintButtonClickedSender = new EventEmitter();
+  @Output() beginHappyHourSender = new EventEmitter();
 
   filterByPrice: string = "allKegs";
 
@@ -37,6 +38,10 @@ export class KegListComponent implements OnInit {
 
   sellPintButtonClicked(currentKeg) {
     this.sellPintButtonClickedSender.emit(currentKeg);
+  }
+
+  beginHappyHourClicked() {
+    this.beginHappyHourSender.emit();
   }
 
   // sendUpRandomInputs(input1, input2) {

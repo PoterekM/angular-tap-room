@@ -32,7 +32,12 @@ export class AppComponent {
     this.selectedKeg = null;
   }
 
-
+  beginHappyHour() {
+    this.masterKegList.forEach(function(currentKeg) {
+      console.log(currentKeg);
+      currentKeg.price -= 1;
+    });
+  }
 
   newKeg(newKegFromChild: Keg) {
     this.masterKegList.push(newKegFromChild);
