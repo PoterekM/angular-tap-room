@@ -1,10 +1,30 @@
 # Taproom
+### Angular in class project 8.17.17
+By Michelle Poterek and Max Scher
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+## Description
+_This is a program written using Angular CLI with focus on two-way data binding, displaying dynamic data, nesting components, and filtering data with a pipe._
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## User Story
+* As a patron, I want to see a list/menu of all available kegs. For each keg, I need to see its name, brand, price and alcoholContent (or perhaps something like flavor for a kombucha store).
+* As an employee, I want to fill out a form when I tap a new keg to add it to the list. (Don't worry about authenticating employee user accounts yet.)
+* As an employee, I want the option to edit a keg's properties after entering them just in case I make a mistake.
+* As a patron and/or employee, I want to see how many pints are left in a keg.
+* As an employee, I want to be able to click a button next to a keg whenever I sell a pint of it. This should decrease the number of pints left by 1.
+* As an employee, I want to be able to see kegs with less than 10 pints left so I can be ready to change them.
+* As a patron, I want to have kegs prices to be color-coded for easy readability. Perhaps based on their price (greater or less than $5 per pint, perhaps) or the particular style of beer or kombucha.
+* As a patron, I want to use the alcohol content property to display stronger beers differently than weaker beers.
+
+## Installation
+In Terminal,
+* `git clone https://github.com/PoterekM/angular-tap-room`
+* `cd angular-tap-room`
+* `npm install`
+* `bower install`
+* `ember serve`
+In Browser,
+* Visit the app at http://localhost:4200.
 
 ## Code scaffolding
 
@@ -26,3 +46,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## License Information
+This web application is free to use under the MIT License &copy; Michelle Poterek and Max Scher
