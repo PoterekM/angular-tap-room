@@ -1,5 +1,11 @@
 .jumbotron h1 {
   font-family: 'Special Elite', cursive;
+  color: black;
+  text-shadow: 1px 1px white;
+}
+
+.jumbotron {
+  background-image: url('./../assets/whiskey-barrels.jpg');
 }
 
 h2 {
@@ -8,4 +14,8 @@ h2 {
 
 button {
   font-family: 'Abel', sans-serif;
+}
+
+body {
+  background-color: #550000;
 }

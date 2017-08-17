@@ -7,7 +7,7 @@ import { Keg } from './keg.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'M&M\'s Taproom';
+  title = 'M&M\'s Brewing';
   masterKegList: Keg[] = [
     new Keg('IPA', 'Laurelwood', 3, 7),
     new Keg('Pale Ale', 'Moon Crest', 4, 9),
