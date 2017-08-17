@@ -9,10 +9,15 @@ import { Keg } from './keg.model';
 export class AppComponent {
   title = 'M&M\'s Brewing';
   masterKegList: Keg[] = [
-    new Keg('IPA', 'Laurelwood', 3, 7),
+    new Keg('IPA', 'Laurelwood', 5, 7),
     new Keg('Pale Ale', 'Moon Crest', 4, 9),
     new Keg('Stout', 'Founders', 5, 8),
-    new Keg('Rye', 'P.Diddy', 10, 4)
+    new Keg('Rye', 'P.Diddy', 10, 4),
+    new Keg('Workhorse', 'Laurelwood', 6, 7.5),
+    new Keg('Two Hearted', 'Bell\'s', 8, 7),
+    new Keg('Red\'s Rye', 'Founders', 10, 3),
+    new Keg('PBR', 'USA', 3, 5)
+
   ];
 
   selectedKeg = null;
