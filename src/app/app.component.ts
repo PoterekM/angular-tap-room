@@ -19,7 +19,11 @@ export class AppComponent {
 
   sellPint(currentKeg) {
     currentKeg.remainingPints -= 1;
-    if (currentKeg.remainingPints <= 10) {
+    if (currentKeg.remainingPints === 0) {
+    currentKeg.name = currentKeg.name + " is sold out!";
+  } else if (currentKeg.remainingPints === -1) {
+    currentKeg.remainingPints += 1;
+    } else if (currentKeg.remainingPints <= 10) {
       alert("Only " + currentKeg.remainingPints + " Pints left of " + currentKeg.brand);
     }
   }
