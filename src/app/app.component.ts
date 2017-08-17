@@ -16,10 +16,11 @@ export class AppComponent {
     new Keg('Workhorse', 'Laurelwood', 6, 7.5),
     new Keg('Two Hearted', 'Bell\'s', 8, 7),
     new Keg('Red\'s Rye', 'Founders', 10, 3),
-    new Keg('PBR', 'USA', 3, 5)
-
+    new Keg('PBR', 'USA', 3, 5),
+    // currentTime = new Date(),
   ];
 
+  currentTime = null;
   selectedKeg = null;
 
   sellPint(currentKeg) {
