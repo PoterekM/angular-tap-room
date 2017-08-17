@@ -16,4 +16,9 @@
     <button (click)="sellPintButtonClicked(currentKeg)">Sell A Pint</button>
 </ul>
 
-<button (click)="beginHappyHourClicked()">Happy Hour</button>
+<div *ngIf="happyHour===false">
+  <button (click)="beginHappyHourClicked()"> Begin Happy Hour</button>
+</div>
+<div *ngIf="happyHour===true">
+  <button (click)="endHappyHourClicked()"> End Happy Hour</button>
+</div>

@@ -12,8 +12,10 @@ export class KegListComponent implements OnInit {
   @Output() editButtonClickedSender = new EventEmitter();
   @Output() sellPintButtonClickedSender = new EventEmitter();
   @Output() beginHappyHourSender = new EventEmitter();
+  @Output() endHappyHourSender = new EventEmitter();
 
   filterByPrice: string = "allKegs";
+  happyHour = false;
 
   onChange(optionFromMenu) {
     this.filterByPrice = optionFromMenu;
@@ -41,7 +43,13 @@ export class KegListComponent implements OnInit {
   }
 
   beginHappyHourClicked() {
+    this.happyHour = true;
     this.beginHappyHourSender.emit();
+  }
+
+  endHappyHourClicked() {
+    this.happyHour = false;
+    this.endHappyHourSender.emit();
   }
 
   // sendUpRandomInputs(input1, input2) {

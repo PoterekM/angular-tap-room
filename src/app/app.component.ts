@@ -34,8 +34,13 @@ export class AppComponent {
 
   beginHappyHour() {
     this.masterKegList.forEach(function(currentKeg) {
-      console.log(currentKeg);
       currentKeg.price -= 1;
+    });
+  }
+
+  endHappyHour() {
+    this.masterKegList.forEach(function(currentKeg) {
+      currentKeg.price+= 1;
     });
   }
 

@@ -6,7 +6,7 @@
   <div class="menu">
     <h2>Beers on Tap</h2>
 
-    <keg-list [childKegList]="masterKegList" (editButtonClickedSender)="editKeg($event)" (sellPintButtonClickedSender)="sellPint($event)" (beginHappyHourSender)="beginHappyHour($event)"></keg-list>
+    <keg-list [childKegList]="masterKegList" (editButtonClickedSender)="editKeg($event)" (sellPintButtonClickedSender)="sellPint($event)" (beginHappyHourSender)="beginHappyHour($event)" (endHappyHourSender)="endHappyHour($event)"></keg-list>
   </div>
 
   <new-keg (newKegSender)="newKeg($event)"></new-keg>
